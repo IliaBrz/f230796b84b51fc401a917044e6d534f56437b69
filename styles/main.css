@@ -1,0 +1,59 @@
+:root{
+  --bg: #fff7e6;         /* тёплый фон */
+  --surface: #ffffff;
+  --primary: #c62828;    /* красный */
+  --primary-2: #ffa26b;  /* темнее */
+  --secondary: #f9a825;  /* жёлтый */
+  --accent: #111111;     /* чёрный акцент */
+  --muted: rgba(0,0,0,.68);
+  --border: rgba(0,0,0,.10);
+}
+
+body { background: var(--bg); color: var(--accent); }
+a { color: var(--primary); }
+a:hover { color: var(--primary-2); }
+
+nav.app-nav { background: linear-gradient(90deg, var(--primary), var(--primary-2)); }
+nav .brand-logo { padding-left: 12px !important; }
+
+.card { border-radius: 12px; }
+.card .card-content p { white-space: normal; }
+
+.app-hero { background: #fff3cd; border: 1px solid var(--border); }
+.app-hero .card-title { color: var(--primary-2); }
+
+.btn.app-btn, .btn-small.app-btn {
+  background: var(--secondary);
+  color: #1b1b1b;
+  font-weight: 700;
+}
+.btn.app-btn:hover, .btn-small.app-btn:hover { background: #f6b93b; }
+
+.btn.app-btn-outline {
+  background: transparent;
+  border: 2px solid var(--secondary);
+  color: var(--accent);
+  font-weight: 700;
+}
+.btn.app-btn-outline:hover { background: rgba(249,168,37,.18); }
+
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.post-body img { border-radius: 10px; }
+.post-meta { font-size: 0.92rem; opacity: 0.86; }
+.footer-note { opacity: 0.75; }
+
+mark.yellow {
+  background: #ffe08a;
+  padding: 0 .15em;
+  border-radius: 4px;
+}
+
+.app-soft { background: #fff3cd; }
+.app-soft-2 { background: #ffebee; }
+
+.pagination li.active { background-color: var(--primary) !important; }
+
+table.striped > tbody > tr:nth-child(odd) { background-color: rgba(249,168,37,.10); }
+
+.sidenav a { color: var(--accent) !important; }
+
