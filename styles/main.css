@@ -1,10 +1,10 @@
 :root{
-  --bg: #fff7e6;         /* тёплый фон */
+  --bg: #fff7e6;
   --surface: #ffffff;
-  --primary: #c62828;    /* красный */
-  --primary-2: #ffa26b;  /* темнее */
-  --secondary: #f9a825;  /* жёлтый */
-  --accent: #111111;     /* чёрный акцент */
+  --primary: #c62828;
+  --primary-2: #ffa26b;
+  --secondary: #f9a825;
+  --accent: #111111;
   --muted: rgba(0,0,0,.68);
   --border: rgba(0,0,0,.10);
 }
