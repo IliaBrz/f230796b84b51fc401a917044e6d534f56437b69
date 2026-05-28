@@ -1,18 +1,15 @@
--- Структура БД для "Кулинарная книга \"Кривые ручки\""
--- MySQL 8+
-
-CREATE DATABASE IF NOT EXISTS crooked_hands_cookbook
+CREATE DATABASE IF NOT EXISTS redacted
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
-USE crooked_hands_cookbook;
+USE redacted;
 
 CREATE TABLE IF NOT EXISTS users (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   last_name VARCHAR(190) NOT NULL DEFAULT '',
   first_name VARCHAR(190) NOT NULL DEFAULT '',
   email VARCHAR(190) NOT NULL,
-  password VARCHAR(190) NOT NULL, -- plain text (по ТЗ)
+  password VARCHAR(190) NOT NULL,
   role ENUM('user','admin') NOT NULL DEFAULT 'user',
   registered_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   last_login_at DATETIME NULL,
