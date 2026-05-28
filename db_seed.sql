@@ -1,13 +1,10 @@
--- Тестовые данные для "Кулинарная книга \"Кривые ручки\""
-USE crooked_hands_cookbook;
+USE redacted;
 
--- Пользователи (по ТЗ пароль хранится в plain text)
 INSERT INTO users (last_name, first_name, email, password, role, registered_at, last_login_at) VALUES
 ('Админов', 'Админ', 'admin', '20262026', 'admin', NOW() - INTERVAL 20 DAY, NOW() - INTERVAL 1 HOUR),
 ('Иванов', 'Иван', 'user1@example.com', '12345', 'user', NOW() - INTERVAL 15 DAY, NOW() - INTERVAL 2 DAY),
 ('Поваров', 'Шеф', 'chef@example.com', 'qwerty', 'user', NOW() - INTERVAL 10 DAY, NULL);
 
--- Статьи (BBCode в body)
 INSERT INTO posts (author_id, title, body, created_at, updated_at) VALUES
 (
   1,
@@ -31,14 +28,11 @@ INSERT INTO posts (author_id, title, body, created_at, updated_at) VALUES
   NOW() - INTERVAL 1 DAY
 );
 
--- Комментарии
 INSERT INTO comments (post_id, user_id, body, created_at) VALUES
 (1, 2, 'С таймером реально проще. Спасибо!', NOW() - INTERVAL 1 DAY),
 (1, 3, 'Я сварил и ничего не подгорело. Я кулинар!', NOW() - INTERVAL 10 HOUR),
 (2, 2, 'Добавил чеснок — стало лучше.', NOW() - INTERVAL 2 DAY);
 
--- Сообщения контактной формы
 INSERT INTO contact_messages (name, email, message, created_at, read_at) VALUES
 ('Ирина', 'irina@example.com', 'Здравствуйте! Добавьте, пожалуйста, рецепт борща.', NOW() - INTERVAL 3 DAY, NULL),
 ('Павел', 'pavel@example.com', 'Нашёл опечатку в одном рецепте. Куда писать?', NOW() - INTERVAL 2 DAY, NOW() - INTERVAL 1 DAY);
-
