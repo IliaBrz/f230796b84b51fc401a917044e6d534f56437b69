@@ -1,8 +1,7 @@
 <?php
 declare(strict_types=1);
 
-// Кулинарная книга "Кривые ручки"
-// Весь проект — в одном файле по ТЗ.
+// Ilia V. Belousov, 2026, Moscow. Do not use.
 
 mb_internal_encoding('UTF-8');
 session_start();
@@ -10,10 +9,10 @@ session_start();
 // -------------------- CONFIG --------------------
 $CFG = [
   'db' => [
-    'host' => '127.0.0.1',
-    'name' => 'labworks.teletr.ru',
-    'user' => 'labworks.teletr.ru',
-    'pass' => 'wSXpxX_DJLat3qL4',
+    'host' => 'REDACTED',
+    'name' => 'REDACTED',
+    'user' => 'REDACTED',
+    'pass' => 'REDACTED',
     'charset' => 'utf8mb4',
   ],
   'site' => [
